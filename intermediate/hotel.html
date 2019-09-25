@@ -35,20 +35,22 @@
 	
 		  <fieldset id="contactform">
 		    First name:<br>
-		    <input type="text" name="firstname" value="Jane">
+		    <input id="name" type="text" name="firstname" value="">
 		    <br>
 		    Last name:<br>
-		    <input type="text" name="lastname" value="Doe">
+		    <input id="lastname" type="text" name="lastname" value="">
 		    <br>
 		    How many nights do you want to stay?<br>
 		    <input id="numberOfNights" type="number" name="numberOfNights" min="1" max="10">
 		    <br>
-		    <input type="submit" value="Submit" id="button">
+		    <input value="Request" id="button">
 		  </fieldset>
 		
-		<div id="message">
-			<p id="messagetext"></p>				
-		</div>	
+		<div id="mess">
+			<p id="personalize"></p>
+			<p id="messagetext" class="mess"></p>				
+		</div>
+		
 	</main>
 
 	<footer>

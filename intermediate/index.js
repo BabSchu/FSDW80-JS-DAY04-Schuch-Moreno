@@ -22,7 +22,7 @@ function HotelConstructor (name) {
 		var result = this.avaiNights - Number(this.nights);
 
 		if ( result <= 0){
-			document.getElementById("messagetext").innerHTML = "Sorry, no free room for nights";
+			document.getElementById("messagetext").innerHTML = "Sorry, no free room for the requested nights";
 		}
 
 		else {
@@ -33,4 +33,29 @@ function HotelConstructor (name) {
 
 var boutiqueHotel = new HotelConstructor ("Leonardo");
 
-document.getElementById("button").onclick = boutiqueHotel.mes;
+
+/*function showMesTex() {
+	document.getElementById("messagetext").style.display="block";
+}*/
+
+function showMes() {
+
+	var element = document.getElementById("mess");
+  	element.classList.add("message");
+}
+
+var clickbutton = document.getElementById("button");
+clickbutton.addEventListener("click", showMes);
+clickbutton.addEventListener("click", boutiqueHotel.mes);
+
+/*this will NOT work, because you can´t attach two funtions to one event (in our case the onclick on the button)
+with the the traditional DOM event handler or html event handler you need the DOM 2 handler aka eventlistener*/
+
+//document.getElementById("button").onclick = document.getElementById("mess").classList.toggle("message");
+//document.getElementById("button").onclick = showMes();
+//document.getElementById("button").onclick = showMesTex();
+
+
+//document.getElementById("button").onclick = boutiqueHotel.mes;
+
+

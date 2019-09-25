@@ -137,7 +137,7 @@ footer hr {
  	box-shadow: 0 2px 2px #302e3b;
 }
 
-#message {
+.message {
 	width: 40%;
 	background-color: #E9F0FA;
 	color: #003580;
@@ -146,4 +146,12 @@ footer hr {
 	box-shadow: 5px 5px 5px #a9bbd4, -5px -5px 5px #a9bbd4;
 	margin: 50px auto;
 	padding: 20px;
+
 }
+
+/* .mess {
+	display: none;
+} */
+
+
+
