@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Barbara Schuch">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Contact</title>
+</head>
+<body>
+	<header id="header">
+		<div id="headerlogo">
+			<img src="img/logo.png" alt="Logo">
+			<span id="logotitle">We have the best Hotels</span>			
+		</div>
+		<div id="navcontainer">			
+			<nav>				
+				<ul id="navlinks">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Work with us</a></li>
+					<li><a href="contact.html">Request</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="banner">
+			<img src="img/banner.jpg" alt="">
+			<h1>Request your room</h1>			
+		</div>
+	</header>
+
+	<main>
+	
+		  <fieldset id="contactform">
+		    First name:<br>
+		    <input type="text" name="firstname" value="Jane">
+		    <br>
+		    Last name:<br>
+		    <input type="text" name="lastname" value="Doe">
+		    <br>
+		    How many nights do you want to stay?<br>
+		    <input id="numberOfNights" type="number" name="numberOfNights" min="1" max="10">
+		    <br>
+		    <input type="submit" value="Submit" id="button">
+		  </fieldset>
+		
+		<div id="message">
+			<p id="messagetext"></p>				
+		</div>	
+	</main>
+
+	<footer>
+		<hr>
+		<div id="footer">
+			<img src="img/logo.png" alt="Logo">			
+		</div>		
+	</footer>
+
+<script src="index.js" charset="utf-8"></script>
+</body>
+</html>
